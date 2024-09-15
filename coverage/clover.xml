@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1700223833286" clover="3.2.0">
-  <project timestamp="1700223833286" name="All files">
+<coverage generated="1726399505602" clover="3.2.0">
+  <project timestamp="1726399505602" name="All files">
     <metrics statements="650" coveredstatements="422" conditionals="214" coveredconditionals="145" methods="151" coveredmethods="73" elements="1015" coveredelements="640" complexity="0" loc="650" ncloc="650" packages="7" files="33" classes="33"/>
     <package name="src">
       <metrics statements="274" coveredstatements="116" conditionals="73" coveredconditionals="32" methods="57" coveredmethods="18"/>
@@ -486,30 +486,30 @@
       <file name="dateAndTime.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/utils/dateAndTime.ts">
         <metrics statements="25" coveredstatements="25" conditionals="10" coveredconditionals="8" methods="9" coveredmethods="9"/>
         <line num="1" count="2" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="23" count="10" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
         <line num="24" count="10" type="stmt"/>
         <line num="25" count="10" type="stmt"/>
-        <line num="27" count="10" type="stmt"/>
-        <line num="31" count="166" type="stmt"/>
-        <line num="35" count="58" type="stmt"/>
-        <line num="39" count="81" type="stmt"/>
-        <line num="43" count="283" type="cond" truecount="2" falsecount="0"/>
-        <line num="44" count="54" type="stmt"/>
-        <line num="46" count="283" type="stmt"/>
-        <line num="50" count="162" type="stmt"/>
-        <line num="55" count="108" type="stmt"/>
+        <line num="26" count="10" type="stmt"/>
+        <line num="28" count="10" type="stmt"/>
+        <line num="32" count="166" type="stmt"/>
+        <line num="36" count="58" type="stmt"/>
+        <line num="40" count="81" type="stmt"/>
+        <line num="44" count="283" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="54" type="stmt"/>
+        <line num="47" count="283" type="stmt"/>
+        <line num="51" count="162" type="stmt"/>
         <line num="56" count="108" type="stmt"/>
-        <line num="57" count="108" type="cond" truecount="1" falsecount="1"/>
-        <line num="58" count="108" type="stmt"/>
-        <line num="62" count="4" type="stmt"/>
-        <line num="64" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="65" count="2" type="stmt"/>
-        <line num="68" count="2" type="stmt"/>
-        <line num="76" count="4" type="stmt"/>
-        <line num="78" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="79" count="2" type="stmt"/>
-        <line num="82" count="2" type="stmt"/>
+        <line num="57" count="108" type="stmt"/>
+        <line num="58" count="108" type="cond" truecount="1" falsecount="1"/>
+        <line num="59" count="108" type="stmt"/>
+        <line num="63" count="4" type="stmt"/>
+        <line num="65" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="66" count="2" type="stmt"/>
+        <line num="69" count="2" type="stmt"/>
+        <line num="77" count="4" type="stmt"/>
+        <line num="79" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="80" count="2" type="stmt"/>
+        <line num="83" count="2" type="stmt"/>
       </file>
       <file name="folders.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/utils/folders.ts">
         <metrics statements="15" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="0"/>

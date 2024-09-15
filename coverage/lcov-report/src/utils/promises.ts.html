@@ -25,14 +25,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/16</span>
+                <span class='fraction'>0/18</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/14</span>
+                <span class='fraction'>0/16</span>
             </div>
         
             
@@ -88,7 +88,11 @@
 <a name='L29'></a><a href='#L29'>29</a>
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -97,11 +101,6 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -109,6 +108,14 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -116,6 +123,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -124,12 +132,15 @@
     private <span class="cstat-no" title="statement not covered" >promises: { [key: string]: Promise&lt;any&gt; } = {};</span>
     private <span class="cstat-no" title="statement not covered" >unnamedPromises: Promise&lt;any&gt;[] = [];</span>
 &nbsp;
+    // TODO: This has become too hacky. Refactor it.
+    public static <span class="cstat-no" title="statement not covered" >UNNAMED_KEY = "__unnamed__";</span>
+&nbsp;
     public <span class="fstat-no" title="function not covered" >add(</span>promise: Promise&lt;any&gt;): void {
 <span class="cstat-no" title="statement not covered" >        this.unnamedPromises.push(promise);</span>
     }
 &nbsp;
     public <span class="fstat-no" title="function not covered" >set(</span>key: string, promise: Promise&lt;any&gt;): void {
-<span class="cstat-no" title="statement not covered" >        if (key in this.promises) {</span>
+<span class="cstat-no" title="statement not covered" >        if (key in this.promises || key === PromiseGroup.UNNAMED_KEY) {</span>
 <span class="cstat-no" title="statement not covered" >            throw new Error(`key: ${key} already in use`);</span>
         }
 &nbsp;
@@ -147,6 +158,7 @@
 <span class="cstat-no" title="statement not covered" >            res[namedPromises[i][0]] = resolvedPromises[this.unnamedPromises.length + i];</span>
         }
 &nbsp;
+<span class="cstat-no" title="statement not covered" >        res[PromiseGroup.UNNAMED_KEY] = resolvedPromises.slice(0, this.unnamedPromises.length);</span>
 <span class="cstat-no" title="statement not covered" >        return res;</span>
     }
 }
@@ -157,7 +169,7 @@
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Sep 15 2024 14:14:15 GMT+0000 (Coordinated Universal Time)
+                at Sun Sep 15 2024 19:30:36 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>

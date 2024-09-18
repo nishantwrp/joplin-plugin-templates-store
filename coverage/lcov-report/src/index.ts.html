@@ -32,7 +32,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/41</span>
+                <span class='fraction'>0/47</span>
             </div>
         
             
@@ -849,12 +849,12 @@ const DOCUMENTATION_URL = <span class="cstat-no" title="statement not covered" >
         }
 &nbsp;
         const getTemplateAndPerformAction = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >async (a</span>ction: TemplateAction) =&gt;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" > {</span></span></span>
-            const template: Note = <span class="cstat-no" title="statement not covered" >JSON.parse(await getUserTemplateSelection());</span>
+            const template: Note = <span class="cstat-no" title="statement not covered" >JSON.parse(await getUserTemplateSelection() || "null");</span>
 <span class="cstat-no" title="statement not covered" >            await performActionWithParsedTemplate(action, template);</span>
         }
 &nbsp;
         const getNotebookDefaultTemplatesDisplayData = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >async (s</span>ettings: DefaultTemplatesConfigSetting): Promise&lt;NotebookDefaultTemplatesDisplayData[]&gt; =&gt;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" > {</span></span></span>
-            const getDisplayDataForNotebook = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >async (n</span>otebookId: string, defaultTemplateNoteId: string, defaultTemplateTodoId: string): Promise&lt;NotebookDefaultTemplatesDisplayData | null&gt; =&gt;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" > {</span></span></span>
+            const getDisplayDataForNotebook = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >async (n</span>otebookId: string, defaultTemplateNoteId: string | null, defaultTemplateTodoId: string | null): Promise&lt;NotebookDefaultTemplatesDisplayData | null&gt; =&gt;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" > {</span></span></span>
                 const promiseGroup = <span class="cstat-no" title="statement not covered" >new PromiseGroup();</span>
 <span class="cstat-no" title="statement not covered" >                promiseGroup.set("notebook", getFolderFromId(notebookId));</span>
 <span class="cstat-no" title="statement not covered" >                promiseGroup.set("noteTemplate", getTemplateFromId(defaultTemplateNoteId));</span>
@@ -947,7 +947,7 @@ const DOCUMENTATION_URL = <span class="cstat-no" title="statement not covered" >
             name: "setDefaultTemplateForNotebook",
             label: "Set default template for notebook",
             execute: <span class="fstat-no" title="function not covered" >async () =</span>&gt;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" > {</span></span>
-                const folder: Folder | null = <span class="cstat-no" title="statement not covered" >JSON.parse(await getUserFolderSelection());</span>
+                const folder: Folder | null = <span class="cstat-no" title="statement not covered" >JSON.parse(await getUserFolderSelection() || "null");</span>
 <span class="cstat-no" title="statement not covered" >                if (folder === null) <span class="cstat-no" title="statement not covered" >return;</span></span>
 &nbsp;
                 const templateId = <span class="cstat-no" title="statement not covered" >await getUserTemplateSelection("id", `Default template for "${folder.title}":`);</span>
@@ -965,7 +965,7 @@ const DOCUMENTATION_URL = <span class="cstat-no" title="statement not covered" >
             name: "clearDefaultTemplatesForNotebook",
             label: "Clear default templates for notebook",
             execute: <span class="fstat-no" title="function not covered" >async () =</span>&gt;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" > {</span></span>
-                const folder: Folder | null = <span class="cstat-no" title="statement not covered" >JSON.parse(await getUserFolderSelection());</span>
+                const folder: Folder | null = <span class="cstat-no" title="statement not covered" >JSON.parse(await getUserFolderSelection() || "null");</span>
 <span class="cstat-no" title="statement not covered" >                if (folder === null) <span class="cstat-no" title="statement not covered" >return;</span></span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >                await clearDefaultTemplates(folder.id);</span>
@@ -1102,7 +1102,7 @@ const DOCUMENTATION_URL = <span class="cstat-no" title="statement not covered" >
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Sep 15 2024 19:53:30 GMT+0000 (Coordinated Universal Time)
+                at Wed Sep 18 2024 21:16:21 GMT+0000 (Coordinated Universal Time)
             </div>
         </div>
         <script src="../prettify.js"></script>

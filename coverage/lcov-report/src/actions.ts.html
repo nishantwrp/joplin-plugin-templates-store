@@ -25,14 +25,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/42</span>
+                <span class='fraction'>0/43</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/17</span>
+                <span class='fraction'>0/14</span>
             </div>
         
             
@@ -54,6 +54,12 @@
         <p class="quiet">
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
     </div>
     <div class='status-line low'></div>
     <pre><table class="coverage">
@@ -219,7 +225,7 @@ const performInsertTextAction = <span class="cstat-no" title="statement not cove
 <span class="cstat-no" title="statement not covered" >    await joplin.commands.execute("insertText", body);</span>
 &nbsp;
     const applyTags = <span class="cstat-no" title="statement not covered" >await ApplyTagsWhileInsertingSetting.get()</span>
-<span class="cstat-no" title="statement not covered" >    if (applyTags) {</span>
+<span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (applyTags) {</span>
 <span class="cstat-no" title="statement not covered" >        for (const tag of template.tags) {</span>
             const tagId = <span class="cstat-no" title="statement not covered" >(await getAnyTagWithTitle(tag)).id;</span>
 <span class="cstat-no" title="statement not covered" >            await applyTagToNote(tagId, currentNote.id);</span>
@@ -231,14 +237,14 @@ const performNewNoteAction = <span class="cstat-no" title="statement not covered
     const folderId = <span class="cstat-no" title="statement not covered" >template.folder ? template.folder : await getSelectedFolder();</span>
     const notePayload = <span class="cstat-no" title="statement not covered" >{ body: template.body, parent_id: folderId, title: template.title, is_todo: isTodo };</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (isTodo &amp;&amp; template.todo_due) {</span>
+<span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (isTodo &amp;&amp; template.todo_due) {</span>
 <span class="cstat-no" title="statement not covered" >        notePayload["todo_due"] = template.todo_due;</span>
     }
 &nbsp;
     const note = <span class="cstat-no" title="statement not covered" >await joplin.data.post(["notes"], null, notePayload);</span>
 &nbsp;
     // Post-process: replace the note_id placeholder with the actual note ID
-<span class="cstat-no" title="statement not covered" >    if (template.body.includes(NOTE_ID_PLACEHOLDER)) {</span>
+<span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (template.body.includes(NOTE_ID_PLACEHOLDER)) {</span>
         const updatedBody = <span class="cstat-no" title="statement not covered" >template.body.split(NOTE_ID_PLACEHOLDER).join(note.id);</span>
 <span class="cstat-no" title="statement not covered" >        await joplin.data.put(["notes", note.id], null, { body: updatedBody });</span>
     }
@@ -251,7 +257,7 @@ const performNewNoteAction = <span class="cstat-no" title="statement not covered
 }
 &nbsp;
 &nbsp;
-export const <span class="cstat-no" title="statement not covered" >performAction = <span class="fstat-no" title="function not covered" >async (a</span>ction: TemplateAction, template: NewNote): Promise&lt;void&gt; =&gt;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" > {</span></span></span>
+export const <span class="cstat-no" title="statement not covered" >performAction = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >a</span>sync (a</span>ction: TemplateAction, template: NewNote): Promise&lt;void&gt; =&gt;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" > {</span></span></span>
 <span class="cstat-no" title="statement not covered" >    switch (action) {</span>
         case TemplateAction.InsertText:
 <span class="cstat-no" title="statement not covered" >            await performInsertTextAction(template);</span>
@@ -270,10 +276,9 @@ export const <span class="cstat-no" title="statement not covered" >performAction
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
-                <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Mar 06 2026 20:02:22 GMT+0000 (Coordinated Universal Time)
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-03-11T12:59:31.527Z
             </div>
-        </div>
         <script src="../prettify.js"></script>
         <script>
             window.onload = function () {

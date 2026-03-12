@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1773241254102" clover="3.2.0">
-  <project timestamp="1773241254102" name="All files">
-    <metrics statements="949" coveredstatements="477" conditionals="280" coveredconditionals="139" methods="209" coveredmethods="80" elements="1438" coveredelements="696" complexity="0" loc="949" ncloc="949" packages="9" files="48" classes="48"/>
+<coverage generated="1773275151488" clover="3.2.0">
+  <project timestamp="1773275151488" name="All files">
+    <metrics statements="958" coveredstatements="477" conditionals="281" coveredconditionals="139" methods="210" coveredmethods="80" elements="1449" coveredelements="696" complexity="0" loc="958" ncloc="958" packages="9" files="49" classes="49"/>
     <package name="src">
-      <metrics statements="351" coveredstatements="124" conditionals="82" coveredconditionals="20" methods="66" coveredmethods="18"/>
+      <metrics statements="355" coveredstatements="124" conditionals="83" coveredconditionals="20" methods="66" coveredmethods="18"/>
       <file name="actions.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/actions.ts">
-        <metrics statements="39" coveredstatements="0" conditionals="14" coveredconditionals="0" methods="7" coveredmethods="0"/>
+        <metrics statements="43" coveredstatements="0" conditionals="15" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -34,17 +34,21 @@
         <line num="45" count="0" type="stmt"/>
         <line num="46" count="0" type="stmt"/>
         <line num="49" count="0" type="stmt"/>
-        <line num="50" count="0" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
         <line num="52" count="0" type="stmt"/>
-        <line num="57" count="0" type="stmt"/>
-        <line num="58" count="0" type="cond" truecount="0" falsecount="3"/>
-        <line num="60" count="0" type="stmt"/>
+        <line num="53" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
         <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
         <line num="63" count="0" type="stmt"/>
-        <line num="64" count="0" type="stmt"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="69" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
       </file>
       <file name="index.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/index.ts">
         <metrics statements="145" coveredstatements="0" conditionals="35" coveredconditionals="0" methods="34" coveredmethods="0"/>
@@ -547,7 +551,7 @@
       </file>
     </package>
     <package name="src.settings">
-      <metrics statements="71" coveredstatements="12" conditionals="15" coveredconditionals="3" methods="21" coveredmethods="3"/>
+      <metrics statements="76" coveredstatements="12" conditionals="15" coveredconditionals="3" methods="22" coveredmethods="3"/>
       <file name="applyTagsWhileInserting.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/settings/applyTagsWhileInserting.ts">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
@@ -609,30 +613,38 @@
         <line num="2" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
       </file>
+      <file name="focusTitleAfterCreate.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/settings/focusTitleAfterCreate.ts">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
       <file name="index.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/settings/index.ts">
-        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
       </file>
       <file name="registry.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/settings/registry.ts">
-        <metrics statements="13" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <metrics statements="14" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
       </file>
       <file name="templatesSource.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/settings/templatesSource.ts">
         <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>

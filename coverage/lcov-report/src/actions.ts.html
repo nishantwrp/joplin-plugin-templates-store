@@ -25,14 +25,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/43</span>
+                <span class='fraction'>0/47</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/14</span>
+                <span class='fraction'>0/15</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/39</span>
+                <span class='fraction'>0/43</span>
             </div>
         
             
@@ -132,7 +132,18 @@
 <a name='L67'></a><a href='#L67'>67</a>
 <a name='L68'></a><a href='#L68'>68</a>
 <a name='L69'></a><a href='#L69'>69</a>
-<a name='L70'></a><a href='#L70'>70</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -181,6 +192,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -205,7 +227,7 @@
 <span class="cstat-no" title="statement not covered" >import { NewNote, NOTE_ID_PLACEHOLDER } from "./parser";</span>
 <span class="cstat-no" title="statement not covered" >import { getSelectedFolder } from "./utils/folders";</span>
 <span class="cstat-no" title="statement not covered" >import { applyTagToNote, getAnyTagWithTitle } from "./utils/tags";</span>
-<span class="cstat-no" title="statement not covered" >import { ApplyTagsWhileInsertingSetting } from "./settings";</span>
+<span class="cstat-no" title="statement not covered" >import { ApplyTagsWhileInsertingSetting, FocusTitleAfterCreateSetting } from "./settings";</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >export enum T</span>emplateAction {</span>
 <span class="cstat-no" title="statement not covered" >    NewNote = "newNote",</span>
@@ -250,6 +272,17 @@ const performNewNoteAction = <span class="cstat-no" title="statement not covered
     }
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    await joplin.commands.execute("openNote", note.id);</span>
+&nbsp;
+    // Focus title bar if the user has enabled the setting
+    const focusTitle = <span class="cstat-no" title="statement not covered" >await FocusTitleAfterCreateSetting.get();</span>
+<span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (focusTitle) {</span>
+<span class="cstat-no" title="statement not covered" >        try {</span>
+<span class="cstat-no" title="statement not covered" >            await joplin.commands.execute("focusElement", "noteTitle");</span>
+        } catch {
+            // focusElement may not be available in all Joplin versions — fail silently
+        }
+    }
+&nbsp;
 <span class="cstat-no" title="statement not covered" >    for (const tag of template.tags) {</span>
         const tagId = <span class="cstat-no" title="statement not covered" >(await getAnyTagWithTitle(tag)).id;</span>
 <span class="cstat-no" title="statement not covered" >        await applyTagToNote(tagId, note.id);</span>
@@ -277,7 +310,7 @@ export const <span class="cstat-no" title="statement not covered" >performAction
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-03-11T15:00:54.071Z
+                at 2026-03-12T00:25:51.457Z
             </div>
         <script src="../prettify.js"></script>
         <script>

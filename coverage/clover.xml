@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1773278822142" clover="3.2.0">
-  <project timestamp="1773278822142" name="All files">
-    <metrics statements="958" coveredstatements="477" conditionals="281" coveredconditionals="139" methods="210" coveredmethods="80" elements="1449" coveredelements="696" complexity="0" loc="958" ncloc="958" packages="9" files="49" classes="49"/>
+<coverage generated="1773285046559" clover="3.2.0">
+  <project timestamp="1773285046560" name="All files">
+    <metrics statements="958" coveredstatements="478" conditionals="281" coveredconditionals="141" methods="210" coveredmethods="80" elements="1449" coveredelements="699" complexity="0" loc="958" ncloc="958" packages="9" files="49" classes="49"/>
     <package name="src">
       <metrics statements="355" coveredstatements="124" conditionals="83" coveredconditionals="20" methods="66" coveredmethods="18"/>
       <file name="actions.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/actions.ts">
@@ -376,74 +376,74 @@
       </file>
     </package>
     <package name="src.helpers">
-      <metrics statements="115" coveredstatements="114" conditionals="53" coveredconditionals="51" methods="18" coveredmethods="18"/>
+      <metrics statements="115" coveredstatements="115" conditionals="53" coveredconditionals="53" methods="18" coveredmethods="18"/>
       <file name="case.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/helpers/case.ts">
         <metrics statements="8" coveredstatements="8" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="28" type="stmt"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="7" count="4" type="cond" truecount="3" falsecount="0"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="29" type="stmt"/>
+        <line num="5" count="11" type="stmt"/>
+        <line num="7" count="11" type="cond" truecount="3" falsecount="0"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
       </file>
       <file name="compare.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/helpers/compare.ts">
         <metrics statements="13" coveredstatements="13" conditionals="25" coveredconditionals="25" methods="2" coveredmethods="2"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="28" type="stmt"/>
-        <line num="5" count="18" type="cond" truecount="25" falsecount="0"/>
-        <line num="9" count="7" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="33" count="2" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="29" type="stmt"/>
+        <line num="5" count="65" type="cond" truecount="25" falsecount="0"/>
+        <line num="9" count="14" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="17" count="7" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="25" count="11" type="stmt"/>
+        <line num="29" count="6" type="stmt"/>
+        <line num="33" count="9" type="stmt"/>
+        <line num="37" count="6" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
       </file>
       <file name="condition.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/helpers/condition.ts">
-        <metrics statements="8" coveredstatements="8" conditionals="11" coveredconditionals="10" methods="2" coveredmethods="2"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="28" type="stmt"/>
-        <line num="5" count="9" type="cond" truecount="7" falsecount="0"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="11" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="16" count="1" type="stmt"/>
+        <metrics statements="8" coveredstatements="8" conditionals="11" coveredconditionals="11" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="29" type="stmt"/>
+        <line num="5" count="34" type="cond" truecount="7" falsecount="0"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="11" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="2" type="stmt"/>
       </file>
       <file name="context.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/helpers/context.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="7" count="28" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="7" count="29" type="stmt"/>
       </file>
       <file name="custom_datetime.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/helpers/custom_datetime.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="28" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="29" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
       </file>
       <file name="datetime.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/helpers/datetime.ts">
         <metrics statements="36" coveredstatements="36" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="28" type="stmt"/>
-        <line num="64" count="28" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="29" type="stmt"/>
+        <line num="64" count="29" type="stmt"/>
         <line num="65" count="13" type="stmt"/>
         <line num="66" count="13" type="stmt"/>
         <line num="68" count="12" type="stmt"/>
@@ -468,70 +468,70 @@
       </file>
       <file name="helper.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/helpers/helper.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="14" count="196" type="stmt"/>
-        <line num="15" count="196" type="stmt"/>
-        <line num="19" count="196" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="14" count="203" type="stmt"/>
+        <line num="15" count="203" type="stmt"/>
+        <line num="19" count="203" type="stmt"/>
       </file>
       <file name="index.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/helpers/index.ts">
         <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="25" count="28" type="stmt"/>
-        <line num="26" count="28" type="stmt"/>
-        <line num="27" count="196" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="25" count="29" type="stmt"/>
+        <line num="26" count="29" type="stmt"/>
+        <line num="27" count="203" type="stmt"/>
       </file>
       <file name="math.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/helpers/math.ts">
-        <metrics statements="16" coveredstatements="15" conditionals="11" coveredconditionals="10" methods="2" coveredmethods="2"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="28" type="stmt"/>
-        <line num="5" count="17" type="stmt"/>
-        <line num="6" count="17" type="stmt"/>
-        <line num="8" count="17" type="cond" truecount="3" falsecount="0"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="12" count="15" type="cond" truecount="6" falsecount="1"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="18" count="5" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="24" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
+        <metrics statements="16" coveredstatements="16" conditionals="11" coveredconditionals="11" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="29" type="stmt"/>
+        <line num="5" count="35" type="stmt"/>
+        <line num="6" count="35" type="stmt"/>
+        <line num="8" count="35" type="cond" truecount="3" falsecount="0"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="12" count="32" type="cond" truecount="7" falsecount="0"/>
+        <line num="14" count="10" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="24" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
       </file>
       <file name="repeat.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/helpers/repeat.ts">
         <metrics statements="10" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="28" type="stmt"/>
-        <line num="5" count="5" type="stmt"/>
-        <line num="7" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="13" count="7" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="29" type="stmt"/>
+        <line num="5" count="14" type="stmt"/>
+        <line num="7" count="14" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="11" count="11" type="stmt"/>
+        <line num="12" count="11" type="stmt"/>
+        <line num="13" count="23" type="stmt"/>
+        <line num="15" count="11" type="stmt"/>
       </file>
     </package>
     <package name="src.helpers.utils">
       <metrics statements="21" coveredstatements="20" conditionals="13" coveredconditionals="12" methods="4" coveredmethods="4"/>
       <file name="attributes.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/helpers/utils/attributes.ts">
         <metrics statements="21" coveredstatements="20" conditionals="13" coveredconditionals="12" methods="4" coveredmethods="4"/>
-        <line num="1" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
+        <line num="1" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
         <line num="22" count="18" type="stmt"/>
         <line num="25" count="37" type="cond" truecount="3" falsecount="0"/>
         <line num="27" count="4" type="stmt"/>
@@ -690,15 +690,15 @@
       </file>
       <file name="dateAndTime.ts" path="/home/runner/work/plugin-templates/plugin-templates/src/utils/dateAndTime.ts">
         <metrics statements="31" coveredstatements="30" conditionals="10" coveredconditionals="6" methods="10" coveredmethods="10"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="24" count="10" type="stmt"/>
-        <line num="25" count="10" type="stmt"/>
-        <line num="26" count="10" type="stmt"/>
-        <line num="28" count="10" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="24" count="11" type="stmt"/>
+        <line num="25" count="11" type="stmt"/>
+        <line num="26" count="11" type="stmt"/>
+        <line num="28" count="11" type="stmt"/>
         <line num="32" count="177" type="stmt"/>
         <line num="36" count="62" type="stmt"/>
-        <line num="40" count="88" type="stmt"/>
+        <line num="40" count="89" type="stmt"/>
         <line num="44" count="300" type="cond" truecount="1" falsecount="0"/>
         <line num="45" count="57" type="stmt"/>
         <line num="47" count="300" type="stmt"/>
